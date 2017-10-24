@@ -1,0 +1,57 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <script src='Box2dWeb.min.js'></script>
+        <script src="Three.js"></script>
+        <script src="keyboard.js"></script>
+        <script src="jquery.js"></script>
+        <script src="maze.js"></script>
+        <script src="core.js"></script>
+    
+        <style>
+            html, body {
+                overflow:hidden;
+            }
+
+            body {
+                position: relative;
+                background: black;
+                margin: 0;
+                padding: 0;
+                font-family: 'Helvetica';
+            }
+
+            #level {
+                background: black;
+                top: 2px;
+                padding: 10px;
+                display: block;
+
+                left: 50%;
+                text-align: center;
+                margin-left: -127px; /*half width*/
+
+                color: yellow;
+                font-weight: bold;
+            }
+
+            #scene {
+                margin-top: 0px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id='level'>
+            Level 1
+        </div>
+        <div id='scene'>
+        </div>
+    </body>
+
+</html>
+
