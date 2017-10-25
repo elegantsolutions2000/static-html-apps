@@ -262,13 +262,11 @@ function gameLoop() {
                 }
 
                 // Display Ads if needed
-                if (typeof TVAdsHandler != 'undefined' && TVAdsHandler.displayAds) {
-                    console.log("Switching to a new level. Displaying Fullscreen ad ...");
-                    TVAdsHandler.displayAds();
-                    console.log("Displaying fullscreen ads");
-                } else {
-                    console.log("Could not find TVAdsHandler");
-                }
+			    if (typeof AdsHandler != 'undefined' && AdsHandler.displayInterstitialAd) {
+			        AdsHandler.displayInterstitialAd();
+			    } else {
+			        console.log("Could not find AdsHandler");
+			    }
 
                 //TODO update score now ...
                 updateGlobalScoreIfNecessary();
